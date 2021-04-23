@@ -1,23 +1,37 @@
-import logo from './logo.svg';
 import './App.css';
+import { useState } from 'react';
+import { Avatar } from './Avatar/Avatar';
+
+const moods = ['sleepy', 'happy', 'interested', 'shoked'];
 
 function App() {
+  const [mood, setMood] = useState(moods[0]);
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='App'>
+      <div id='controls'>
+        <div>
+          <h2>MOOD</h2>
+          <select onChange={(e) => setMood(e.target.value)}>
+            {moods.map((s, i) => (
+              <option value={s} key={i}>
+                {s}
+              </option>
+            ))}
+          </select>
+        </div>
+      </div>
+      <div
+        style={{
+          width: '100%',
+          display: 'flex',
+          justifyContent: 'center',
+          flexDirection: 'row',
+        }}
+      >
+        <div id='avatarContainer'>
+          <Avatar mood={mood} />
+        </div>
+      </div>
     </div>
   );
 }
