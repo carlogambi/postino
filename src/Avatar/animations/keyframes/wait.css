@@ -1,0 +1,29 @@
+@keyframes kWaitA {
+    from {
+      opacity: 0.99;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+@keyframes kWaitB {
+    from {
+      opacity: 0.99;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+  
+@keyframes invisible {
+    from {
+      top:'0px'
+    }
+    50%{
+      top:'3px'
+    }
+    to {
+      top:'0px'
+    }
+  }
+  

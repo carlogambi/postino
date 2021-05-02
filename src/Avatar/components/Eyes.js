@@ -9,7 +9,7 @@ export const eyesTypes = {
   open: 'default',
 };
 
-const Eyes = ({ mood, style, animation, onAnimationEnd }) => (
+const Eyes = ({ mood, style, animation, onAnimationEnd, step }) => (
   <Layer
     src={(() => {
       switch (mood) {
@@ -24,6 +24,8 @@ const Eyes = ({ mood, style, animation, onAnimationEnd }) => (
     style={{ zIndex: 14, ...style }}
     animation={animation}
     onAnimationEnd={onAnimationEnd}
+    alt='eyes'
+    step= {step}
   />
 );
 

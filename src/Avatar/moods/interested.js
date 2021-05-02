@@ -6,36 +6,17 @@ import { mouthTypes } from '../components/Mouth';
 
 const interested = [
   {
+    eyes: eyesTypes.closeDown,
+    mouth: mouthTypes.neutro,
+    animation: {
+      mouth: fadeOut(0.2)
+    },
+  },
+  {
     eyes: eyesTypes.open,
-    mouth: mouthTypes.neutro,
+    mouth: mouthTypes.open,
     animation: {
-      face: move(2),
-      eyes: fadeIn(2),
-      mouth: fadeIn(2),
-      glass: fadeIn(2),
-      circle: fadeIn(2),
-    },
-  },
-  {
-    eyes: eyesTypes.closeUp,
-    mouth: mouthTypes.neutro,
-    animation: {
-      face: fadeOut(2),
-      eyes: fadeOut(2),
-      mouth: fadeOut(2),
-      glass: fadeOut(2),
-      circle: fadeOut(2),
-    },
-  },
-  {
-    eyes: eyesTypes.closeUp,
-    mouth: mouthTypes.neutro,
-    animation: {
-      face: move(2),
-      eyes: move(2),
-      mouth: move(2),
-      glass: move(2),
-      circle: move(2),
+      mouth: fadeIn(0.3)
     },
   },
 ];

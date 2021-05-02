@@ -5,6 +5,7 @@ export const fadeOut = (seconds) => {
     animation: {
       animationName: 'kfadeOut',
       animationDuration: `${seconds}s`,
+      opacity: 0,
     },
   };
 };

@@ -5,11 +5,23 @@
   max-height: 100%;
 }
 #avatar {
-  position: relative;
+  position: absolute;
+  top: 0px;
+  bottom: 0px;
+  left: 0px;
+  right: 0px;
 }
 
 #avatar .avatarLayer {
   position: absolute;
   top: 0px;
   left: 0px;
+}
+
+.avatarState{
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  font-size: 12px;
+  padding-left: 13px;
 }

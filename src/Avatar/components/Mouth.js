@@ -8,10 +8,10 @@ export const mouthTypes = {
   open: 'i',
   smile: 's',
   neutro: 'n',
-  noMouth: 'default',
+  noMouth: 'def',
 };
 
-const Mouth = ({ mood, style, animation, onAnimationEnd }) => (
+const Mouth = ({ mood, style, animation, onAnimationEnd, step }) => (
   <Layer
     src={(() => {
       switch (mood) {
@@ -28,6 +28,8 @@ const Mouth = ({ mood, style, animation, onAnimationEnd }) => (
     style={{ zIndex: 13, ...style }}
     animation={animation}
     onAnimationEnd={onAnimationEnd}
+    alt='mouth'
+    step= {step}
   />
 );
 export default Mouth;

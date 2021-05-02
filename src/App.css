@@ -1,7 +1,6 @@
 #controls {
-  border: solid 1px black;
   display: flex;
-  justify-content: space-around;
+  justify-content: flex-end;
 }
 
 #avatarContainer {
@@ -10,4 +9,5 @@
   min-height: 400px;
   max-height: 400px;
   background-color: yellow;
+  position: relative;
 }
